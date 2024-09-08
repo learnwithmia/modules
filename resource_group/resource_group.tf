@@ -1,4 +1,4 @@
-resource "azurerm_resource_group" "resource_group" {
+resource "azurerm_resource_group" "this" {
   for_each = { for each in var.resource_groups : each.name => each }
   # name     = each.value.name
   # location = each.value.location

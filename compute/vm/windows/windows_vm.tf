@@ -3,7 +3,8 @@ resource "azurerm_windows_virtual_machine" "windows_virtual_machine" {
     name                  = "${var.env}-${each.value.name}"
     resource_group_name   = var.resource_group_name
     location              = var.location
-    tags                  = each.value.tags
+    # tags                  = each.value.tags
+    tags                  = var.tags
     admin_password        = each.value.admin_password
     admin_username        = each.value.admin_username
     custom_data           = base64encode("export ENV=${var.env}")

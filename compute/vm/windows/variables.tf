@@ -2,7 +2,7 @@ variable "windows_vm" {
   type = list(object({
     name                  = string
     # resource_group_name   = string
-    tags                  = optional(map(string))
+    # tags                  = optional(map(string))
     admin_password        = string
     admin_username        = string
     size                  = string

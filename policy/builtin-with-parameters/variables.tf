@@ -3,9 +3,9 @@ variable "policies" {
     name                        = string
     policy_definition_id        = string
     subscription_id             = string
-    parameter_name              = optional(string, null)
-    parameter_type              = optional(string, null)
-    parameter_value             = optional(string, null)
+    parameter_name              = string
+    parameter_type              = string
+    parameter_value             = string
     enforce                     = optional(bool, false)
   }))
 }

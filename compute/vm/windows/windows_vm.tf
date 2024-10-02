@@ -28,5 +28,6 @@ resource "azurerm_windows_virtual_machine" "windows_virtual_machine" {
         sku       = each.value.sku
         version   = "latest"
     }
+    encryption_at_host_enabled = true
     vm_agent_platform_updates_enabled = true
 }

@@ -4,6 +4,7 @@ variable "storage_accounts" {
     # resource_group_name = string
     # location            = string
     public_network_access_enabled = optional(bool, false)
+    cross_tenant_replication_enabled = optional(bool, false)
   }))
 }
 

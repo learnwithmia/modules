@@ -10,4 +10,5 @@ resource "azurerm_storage_account" "storage" {
   min_tls_version          = "TLS1_2"
   # making it more secure
   public_network_access_enabled = each.value.public_network_access_enabled
+  cross_tenant_replication_enabled = each.value.cross_tenant_replication_enabled
 }

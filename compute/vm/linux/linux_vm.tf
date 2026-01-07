@@ -25,6 +25,7 @@ resource "azurerm_linux_virtual_machine" "linux_virtual_machine" {
     os_disk {
         caching              = "ReadWrite"
         storage_account_type = "Standard_LRS"
+        disk_size_gb         = each.value.os_disk_size_gb
     }
     size                  = each.value.size
     source_image_reference {

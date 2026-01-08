@@ -4,7 +4,7 @@ variable "linux_vm" {
     resource_group_name   = string
     # admin_password        = string
     size                  = string
-    os_disk_size_gb       = number
+    # os_disk_size_gb       = number
   }))
 }
 

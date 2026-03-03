@@ -34,9 +34,14 @@ resource "azurerm_linux_virtual_machine" "linux_virtual_machine" {
         # sku       = "20_04-lts"
         # version   = "latest"
         # 2024-04-03 trying 22.04
+        # publisher = "Canonical"
+        # offer     = "0001-com-ubuntu-server-jammy"
+        # sku       = "22_04-lts"
+        # version   = "latest"
+        # 2026-06-03 trying 24.04
         publisher = "Canonical"
-        offer     = "0001-com-ubuntu-server-jammy"
-        sku       = "22_04-lts"
+        offer     = "ubuntu-24_04-lts"
+        sku       = "server"
         version   = "latest"
     }
 }
